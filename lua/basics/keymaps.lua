@@ -24,6 +24,7 @@ local function maplua(key, txt)
 end
 ]]--
 
+-- moving
 mapkey_n_v('j', 'h')
 mapkey_n_v('i', 'k')
 mapkey_n_v('k', 'j')
@@ -34,8 +35,10 @@ mapkey_n_v('I', '5k')
 mapkey_n_v('H', 'I')
 mapkey_n_v('h', 'i')
 
-mapkey('n', ';', ':')
 
+-- others
+mapkey('i', ';;', '<Esc>$a;<Esc>')
+mapkey('n', ';', ':')
 mapkey('i', 'jk', '<Esc>:w<CR>')
 mapcmd('S', 'w')
 mapcmd('Q', 'q')
@@ -53,3 +56,5 @@ mapkey_n_v('<LEADER>i', '<C-w>k')
 mapkey_n_v('<LEADER>k', '<C-w>j')
 mapkey_n_v('<LEADER>j', '<C-w>h')
 mapkey_n_v('<LEADER>l', '<C-w>l')
+
+

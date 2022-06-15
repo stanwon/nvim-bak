@@ -23,7 +23,8 @@ mapcmd('<Leader>nf', 'DashboardNewFile')
 mapcmd('<Leader>ff', 'Telescope find_files search_dirs=/home/stan hidden=true')
 mapcmd('<Leader>fh', 'Telescope oldfiles')
 mapcmd('<Leader>cc', 'Telescope colorscheme')
-mapcmd('<Leader>fw', 'Telescope live_grep search_dirs=/home/stan hidden=true')
+--mapcmd('<Leader>fw', 'Telescope live_grep search_dirs=/home/stan hidden=true')
+mapcmd('<Leader>fw', 'Telescope live_grep')
 mapcmd('<Leader>fm', 'Telescope marks')
 
 -- nvim-tree
@@ -44,7 +45,7 @@ mapcmd('ss', 'SymbolsOutline')
 
 -- floaterm
 mapcmd('<Leader>tt', 'FloatermNew')
-mapcmd('rc', 'FloatermNew --autoclose=0 gcc % -o ~/test/c/out/%< && ~/test/c/out/%<<CR>')
+mapcmd('rc', 'FloatermNew --autoclose=0 gcc % -o ~/code/c/out/%< && ~/code/c/out/%<<CR>')
 mapcmd('rl', 'FloatermNew --autoclose=0 ./%')
 
 -- cosmicui
