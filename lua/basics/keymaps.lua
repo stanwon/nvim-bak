@@ -35,9 +35,13 @@ mapkey_n_v('I', '5k')
 mapkey_n_v('H', 'I')
 mapkey_n_v('h', 'i')
 
-
--- others
 mapkey('i', ';;', '<Esc>$a;<Esc>')
+
+-- coding scripts
+mapkey('i', ';n', '<Esc>wwvf,hc')
+mapkey('i', ';m', '<Esc>wwvf)hc')
+mapkey('n', '<LEADER>v', '0wi = <Esc>F=hi')
+
 mapkey('n', ';', ':')
 mapkey('i', 'jk', '<Esc>:w<CR>')
 mapcmd('S', 'w')

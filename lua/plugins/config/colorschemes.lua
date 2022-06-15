@@ -1,4 +1,5 @@
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd("colorscheme gruvbox")
+--vim.cmd("colorscheme gruvbox-material")
 vim.t.is_transparent = 1
 vim.opt.background = "dark" -- or "light" for light mode
 vim.api.nvim_set_hl(0, "Normal", {guibg = NONE; ctermbg = NONE})

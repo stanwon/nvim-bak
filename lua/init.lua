@@ -6,7 +6,7 @@ require("basics.keymaps")
 require("plugins.plugins")
 
 require("plugins.config.keymaps")
-require("plugins.config.gruvbox")
+require("plugins.config.colorschemes")
 require("plugins.config.dashboard")
 require("plugins.config.telescope")
 require("plugins.config.outline")
