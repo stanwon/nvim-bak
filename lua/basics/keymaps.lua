@@ -34,8 +34,9 @@ mapkey_n_v('I', '5k')
 mapkey_n_v('H', 'I')
 mapkey_n_v('h', 'i')
 
-mapkey('n', ';', ':')
+mapkey('i', ';;', '<Esc>$a;<Esc>')
 
+mapkey('n', ';', ':')
 mapkey('i', 'jk', '<Esc>:w<CR>')
 mapcmd('S', 'w')
 mapcmd('Q', 'q')

@@ -16,6 +16,9 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-cmp'
 
   use 'ellisonleao/gruvbox.nvim'
+  use 'folke/tokyonight.nvim'
+  use 'sainnhe/sonokai'
+  use 'sainnhe/gruvbox-material'
 
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
@@ -36,7 +39,6 @@ return require('packer').startup(function()
 
   use 'p00f/nvim-ts-rainbow'
 
-  use 'folke/tokyonight.nvim'
   use 'petertriho/nvim-scrollbar'
 
   use 'MunifTanjim/nui.nvim'
