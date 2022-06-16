@@ -40,7 +40,8 @@ mapkey('i', ';;', '<Esc>$a;<Esc>')
 -- coding scripts
 mapkey('i', ';n', '<Esc>wwvf,hc')
 mapkey('i', ';m', '<Esc>wwvf)hc')
-mapkey('n', '<LEADER>v', '0wi = <Esc>F=hi')
+mapkey('n', '<LEADER>vv', '0wi = <Esc>F=hi')
+mapkey('n', '<LEADER>vd', 'bvf hy?() {<CR>:nohlsearch<CR>o ;<Esc>PF i')
 
 mapkey('n', ';', ':')
 mapkey('i', 'jk', '<Esc>:w<CR>')
