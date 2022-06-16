@@ -38,16 +38,17 @@ mapkey_n_v('h', 'i')
 mapkey('i', ';;', '<Esc>$a;<Esc>')
 
 -- coding scripts
-mapkey('i', ';n', '<Esc>wwvf,hc')
-mapkey('i', ';m', '<Esc>wwvf)hc')
-mapkey('n', '<LEADER>vv', '0wi = <Esc>F=hi')
-mapkey('n', '<LEADER>vd', 'bvf hy?() {<CR>:nohlsearch<CR>o ;<Esc>PF i')
+mapkey('i', ';n', '<Esc>wwv/[;,)]<CR>hd:nohlsearch<CR>ha')
+mapkey('n', '<LEADER>vv', 'F(bi = <Esc>F=hi')
+mapkey('n', '<LEADER>vd', 'bvey:?() {<CR>:nohlsearch<CR>o ;<Esc>PF i')
 
 mapkey('n', ';', ':')
 mapkey('i', 'jk', '<Esc>:w<CR>')
 mapcmd('S', 'w')
 mapcmd('Q', 'q')
 mapcmd('<LEADER><CR>', 'nohlsearch')
+
+mapcmd('T', '/\\[*;)]<CR>')
 
 -- windows split
 mapcmd('si', 'set nosplitbelow<CR>:split')
