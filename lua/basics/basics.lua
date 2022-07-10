@@ -11,7 +11,7 @@ vim.opt.termguicolors   = true
 vim.opt.ignorecase      = true
 vim.opt.list            = true
 vim.opt.scrolloff       = 5
-vim.opt.colorcolumn     = "80"
+vim.opt.colorcolumn     = "120"
 
 -- tabs
 vim.opt.autoindent      = true

@@ -45,10 +45,14 @@ mapcmd('ss', 'SymbolsOutline')
 
 -- floaterm
 mapcmd('<Leader>tt', 'FloatermNew')
-mapcmd('rc', 'FloatermNew --autoclose=0 gcc % -o ~/code/c/out/%< && ~/code/c/out/%<<CR>')
+mapcmd('rcc', 'FloatermNew --autoclose=0 gcc % -o ~/code/c/out/%< && ~/code/c/out/%<<CR>')
+mapcmd('rcm', 'FloatermNew --autoclose=0 make >> /dev/null && ./main<CR>')
 mapcmd('rl', 'FloatermNew --autoclose=0 ./%')
 
 -- cosmicui
 map('n', '<Leader>r', '<cmd>lua require("cosmic-ui").rename()<cr>')
 map('n', '<leader>ga', '<cmd>lua require("cosmic-ui").code_actions()<cr>')
 map('v', '<leader>ga', '<cmd>lua require("cosmic-ui").range_code_actions()<cr>')
+
+-- markdown-preview
+vim.cmd("autocmd Filetype markdown nnoremap <Leader>mm :MarkdownPreviewToggle<CR>")

@@ -18,6 +18,7 @@ require("plugins.config.autopair")
 require("plugins.config.treesitter")
 require("plugins.config.scrollbar")
 require("plugins.config.cosmicui")
+require("plugins.config.markdown-keymap")
 
 require("plugins.config.lsp.lsp-config")
 require("plugins.config.lsp.lsp-installer")
